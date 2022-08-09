@@ -168,7 +168,7 @@ def chk():
     sys.exit() 
     if name == '__main__': 
      print (logo)
-     chk() 
+  
     
 chk()
 os.system('clear')
