@@ -26,7 +26,7 @@ try:
 	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
 	open('.prox.txt','w').write(prox)
 except Exception as e:
-	print('[[\x1b[1;92mâ¢\x1b[1;97m] [\x1b[1;96mAlvino_adijaya_xy')
+	print('[[\x1b[1;92m•\x1b[1;97m] [\x1b[1;96mCONFIDENCE  CYBER TECH DECODE KING')
 prox=open('.prox.txt','r').read().splitlines()
 for xd in range(10000):
 	a='Mozilla/5.0 (Symbian/3; Series60/'
@@ -146,65 +146,32 @@ thn = datetime.datetime.now().year
 okc = 'OK-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 
-def jalan(z):
-    for e in z + '\n':
-        sys.stdout.write(e)
-        sys.stdout.flush()
-        time.sleep(0.01)
-def main_apv():
-
-    imt="CLONER"
-    ak="DEATH"
-    os.system('clear')
-    banner()
-    try:
-        key1=open('/data/data/com.termux/files/usr/bin/.FSFS-cov', 'r').read()
-    except IOError:
-        os.system("clear")
-        banner()
-        print ("++++++++++++++++++++++++++++++++++++++++")
-        print ("🙄🙄Free Trial not available, Try again Tomorrow")
-        print ("++++++++++++++++++++++++++++++++++++++++")
-        print (" Your Key Is Not Approved ")
-        print ("++++++++++++++++++++++++++++++++++++++++")
-        myid = uuid.uuid4().hex[:20].upper()
-        print ("  YOUR KEY : "+ak+myid+imt)
-        print ("++++++++++++++++++++++++++++++++++++++++")
-        kok=open('/data/data/com.termux/files/usr/bin/.FSFS-cov', 'w')
-        kok.write(myid+imt)
-        kok.close()
-        print ("++++++++++++++++++++++++++++++++++++++++")
-        print ("  Send Me Your Key On WhatsApp For Approval ")
-        print ("++++++++++++++++++++++++++++++++++++++++")
-        input('\n Press Enter For Me To Approve Your Key ')
-        print ("We Give Glory To God ")
-        print ("++++++++++++++++++++++++++++++++++++++++")
-        time.sleep(3.5)
-        tks = 'Dear%20CONFIDENCE,%20Please%20Apporved%20My%20Key%20To%20Premium%20Version%201.7%20My%20%20Key%20%20:%20'+ak+''+myid+''+imt
-        os.system('am start https://wa.me/+2349074962196?text=' + tks)        
-
-    r1=requests.get('https://pastebin.com/PdDJpFf5').text
-    if key1 in r1:
-        login()
-    else:
-        os.system("clear")
-        banner()
-        print ("++++++++++++++++++++++++++++++++++++++++")
-        print ("🙄🙄Free Trial not available, Try again Tomorrow")
-        print ("++++++++++++++++++++++++++++++++++++++++")
-        print (" Your Key Is Not Approved ")
-        print ("++++++++++++++++++++++++++++++++++++++++")
-        print ("  YOUR KEY : "+ak+key1+imt)
-        print ("++++++++++++++++++++++++++++++++++++++++")
-        print ("  Send Me Your Key On WhatsApp For Approval ")
-        print ("++++++++++++++++++++++++++++++++++++++++")
-        input('\n Press Enter For Me To Approve Your Key ')
-        print ("We Give Glory To God ")
-        print ("++++++++++++++++++++++++++++++++++++++++")
-        time.sleep(3.5)
-        tks = 'Dear%20CONFIDENCE,%20Please%20Apporved%20My%20Key%20To%20Premium%20Version%201.7%20My%20%20Key%20%20:%20'+ak+''+key1
-        os.system('am start https://wa.me/+2349074962196?text=' + tks)
- 
+def chk(): 
+  uuid = str(os.geteuid()) + str(os.getlogin()) 
+  id = "|".join(uuid) 
+  print ("\033[1;92m╭────────────────────────────────────────────╮")
+  print("\x1b[1;97m [\033[1;91m•\x1b[1;97m]\033[1;93m  YOUR ID : "+id) 
+  print ("\033[1;92m╰────────────────────────────────────────────╯")
+  try: 
+    httpCaht = requests.get("https://raw.githubusercontent.com/Deathcloner/TEST/main/use.txt").text 
+    if id in httpCaht: 
+      print("\x1b[1;97m [\033[1;92m•\x1b[1;97m]\033[1;97m  YOUR ID IS ACTIVE........\033[97m") 
+      msg = str(os.geteuid()) 
+      time.sleep(1) 
+      pass 
+    else: 
+      print("\x1b[1;97m [\033[1;91m•\x1b[1;97m]\033[1;93m YOUR ID IS NOT ACTIVE SEND MESSAGE ON WHATSAPP FREE USER PLEASE DONT INBOX\033[97m") 
+      os.system('xdg-open https://wa.me/+2349074962196')
+      time.sleep(1) 
+      sys.exit() 
+  except: 
+    sys.exit() 
+    if name == '__main__': 
+     print (logo)
+     chk() 
+    
+chk()
+os.system('clear')
 #------------------[ MACHINE-SUPPORT ]---------------#
 def alvino_xy(u):
         for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.005)
@@ -1146,14 +1113,16 @@ def cek_apk(session,cookie):
 		for i in range(len(game)):
 			print("   %s%s. %s%s"%(H,i+1,game[i].replace("Ditambahkan pada"," Ditambahkan pada"),N))
 	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":cookie}).text
-	sop = BeautifulSoup(w,"html.parse
+	sop = BeautifulSoup(w,"html.parser")
 	x = sop.find("form",method="post")
 	game = [i.text for i in x.find_all("h3")]
 	if len(game)==0:
 		print(f"\n {N}[{M}!{N}] opshh tidak ada aplikasi kadaluarsa di akun ini.")
 	else:
 		for i in range(len(game)):
-			print("   %s%s. %s%s"%(K,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"
+			print("   %s%s. %s%s"%(K,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
+	
+
 
 #>>>>> THANKS TO THIS HERE <<<<<<<#
 #>>>>> Cowok_pink_13<<<<<#
