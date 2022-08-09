@@ -1146,16 +1146,14 @@ def cek_apk(session,cookie):
 		for i in range(len(game)):
 			print("   %s%s. %s%s"%(H,i+1,game[i].replace("Ditambahkan pada"," Ditambahkan pada"),N))
 	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":cookie}).text
-	sop = BeautifulSoup(w,"html.parser")
+	sop = BeautifulSoup(w,"html.parse
 	x = sop.find("form",method="post")
 	game = [i.text for i in x.find_all("h3")]
 	if len(game)==0:
 		print(f"\n {N}[{M}!{N}] opshh tidak ada aplikasi kadaluarsa di akun ini.")
 	else:
 		for i in range(len(game)):
-			print("   %s%s. %s%s"%(K,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
-	
-main_apv()
+			print("   %s%s. %s%s"%(K,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"
 
 #>>>>> THANKS TO THIS HERE <<<<<<<#
 #>>>>> Cowok_pink_13<<<<<#
