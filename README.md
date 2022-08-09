@@ -28,7 +28,9 @@ python3 -m pip install requests bs4
 #UPDATE
 
 cd Crack
+
 git pull
+
 python Confidence.py
 
 
